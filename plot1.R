@@ -11,7 +11,6 @@ if (! file.exists(nametxt)){
    unzip(namezip)
 }
 
-
 # Readin txt file and changing class of date
 df <- read.table("household_power_consumption.txt",header = TRUE,sep = ";",na.strings=c("?"))
 df$Date <- as.Date(df$Date,"%d/%m/%Y")
